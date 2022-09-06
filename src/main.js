@@ -1,6 +1,6 @@
 const {ethers, BigNumber} = require("ethers")
 const MY_PRIV_KEY = ""
-const TO = "0x58407dc61e4aaa075dcde63dfe9af23249a7ef6b";
+const TO = "";
 
 const provider = new ethers.providers.InfuraProvider("homestead","")
 const signer = new ethers.Wallet(MY_PRIV_KEY)
