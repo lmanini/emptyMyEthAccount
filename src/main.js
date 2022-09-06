@@ -1,6 +1,7 @@
 const {ethers, BigNumber} = require("ethers")
-const MY_PRIV_KEY = ""
-const TO = "";
+const MY_PRIV_KEY = ""  //change me
+const TO = "";          //change me
+const GAS_PRICE = 420;  //change me
 
 const provider = new ethers.providers.InfuraProvider("homestead","")
 const signer = new ethers.Wallet(MY_PRIV_KEY)
@@ -38,5 +39,5 @@ async function emptyMyWallet(targetAddress, gasPriceInGwei) {
     console.log("Transaction hash: ", txResponse.hash)
 }
 
-emptyMyWallet(TO, 45)
+emptyMyWallet(TO, GAS_PRICE)
     .then(() => process.exit(0))
